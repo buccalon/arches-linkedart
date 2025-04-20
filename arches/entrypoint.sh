@@ -315,10 +315,10 @@ run_setup_db() {
 
 run_load_package() {
 	echo ""
-	echo "----- *** LOADING PACKAGE: ${ARCHES_PROJECT} *** -----"
+	echo "----- *** LOADING PACKAGE: OGEE *** -----"
 	echo ""
 	cd ${APP_FOLDER}
-	python3 manage.py packages -o load_package -s ${ARCHES_PROJECT}/pkg -db -dev -y
+	python3 manage.py packages -o load_package -s https://github.com/thegetty/Ogee/archive/v7.6.zip -db
 }
 
 run_django_server() {
@@ -349,6 +349,7 @@ run_arches() {
 	run_createcachetable
 	start_celery_supervisor
 	run_setup_arches_setup_webpack
+	run_load_package
 	run_django_server
 }
 

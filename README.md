@@ -1,7 +1,20 @@
+# arches-linkedart
+
+Test setup for [Arches](https://github.com/archesproject/arches/) with [Linked Art](https://linked.art/) via [Ogee](https://github.com/thegetty/Ogee).
+
+This is a fork of [arches-via-docker](https://github.com/opencontext/arches-via-docker/) with changes to [entrypoint.sh](arches/entrypoint.sh).
+
+The following command run Arches on `localhost:8004`:
+
+```bash
+docker compose up --build
+```
+
+Be patient, it takes a while.
+
 # arches-via-docker
+
 Deployment of Arches (archesproject.org) via Docker. We initially developed this repo to simplify and streamline deployment of Arches for use in archaeology and related instruction.
-
-
 
 # Public Web Server and Localhost Deployments
 
