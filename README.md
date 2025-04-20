@@ -1,6 +1,6 @@
 # arches-linkedart
 
-Docker setup for [Arches](https://github.com/archesproject/arches/) with [Linked Art](https://linked.art/) via [Ogee](https://github.com/thegetty/Ogee).
+Docker setup for [Arches](https://github.com/archesproject/arches/) with [Linked Art](https://linked.art/) via the [Ogee](https://github.com/thegetty/Ogee) package.
 
 <img width="1290" alt="image" src="https://github.com/user-attachments/assets/ab5181fd-cf50-4c44-9b1e-950c91ca4efc" />
 
@@ -8,17 +8,19 @@ Docker setup for [Arches](https://github.com/archesproject/arches/) with [Linked
 
 This is a fork of [arches-via-docker](https://github.com/opencontext/arches-via-docker/) with changes to [entrypoint.sh](arches/entrypoint.sh).
 
-The following command run Arches on `localhost:8004`:
+The following command runs Arches on `localhost:8004`:
 
 ```bash
 docker compose up --build
 ```
 
-Be patient, it takes a while.
+Be patient, it takes a while to build and load the package.
 
-Login `admin` and password `admin`.
+Access the panel with login `admin` and password `admin`.
 
-More instructions bellow.
+You can find more instructions on Docker below.
+
+-----
 
 # arches-via-docker
 
